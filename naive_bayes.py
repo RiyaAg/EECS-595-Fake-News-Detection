@@ -135,7 +135,7 @@ def train(train_data, train_labels):
 
     # Update the classifier with the best hyperparameter
     classifier.classifier = MultinomialNB(alpha=best_alpha)
-
+    print(best_alpha)
     # Fit the classifier to the training data
     classifier.classifier.fit(X_train, train_labels)
 
